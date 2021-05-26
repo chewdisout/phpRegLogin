@@ -1,0 +1,99 @@
+.container, .comment-section {
+  position: relative;
+  max-width: 700px;
+  border-radius: 8px;
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+}
+.container .header, .comment-section .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: 0 auto 40px auto;
+  border-bottom: 2px solid #9b59b6;
+}
+.container .header div, .comment-section .header div {
+  margin-left: 10px;
+}
+.container .body, .comment-section .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.container .comment, .comment-section .comment {
+  width: 80%;
+  margin: 0 auto 40px auto;
+}
+.container .comment__header, .comment-section .comment__header {
+  border-bottom: 2px solid #9b59b6;
+  margin-bottom: 20px;
+}
+.container .comment__body, .comment-section .comment__body {
+  color: darkgray;
+}
+.container .comment__footer, .comment-section .comment__footer {
+  border-top: 2px solid #9b59b6;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comment-section {
+  position: relative;
+  max-width: 700px;
+  border-radius: 8px;
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+}
+.comment-section .header {
+  margin: 0 auto 20px auto;
+}
+.comment-section .body textarea {
+  height: 300px;
+  resize: none;
+}
+.comment-section .footer {
+  margin: 20px auto 0 auto;
+  border-top: 2px solid #9b59b6;
+  width: 90%;
+}
+.comment-section .footer .btn {
+  position: relative;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+  width: 34.2px;
+  cursor: pointer;
+}
+.comment-section .footer .btn div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #9b59b6;
+}
+.comment-section .footer .btn:hover div {
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}

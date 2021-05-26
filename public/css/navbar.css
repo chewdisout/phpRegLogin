@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Secular+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-family: "Secular One", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+.navbar .navbar__logo {
+  position: relative;
+  font-size: 22px;
+}
+.navbar .navbar__logo div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  width: 40px;
+  height: 4px;
+}
+.navbar .navbar__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+.navbar .navbar__items li {
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.navbar .navbar__items li div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+}
+.navbar .navbar__items li:hover div {
+  width: 30px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}

@@ -1,0 +1,89 @@
+
+.container, .comment-section{
+  position: relative;
+  max-width: 700px;
+  border-radius: 8px;
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  .header{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto 40px auto;
+    border-bottom: 2px solid #9b59b6;
+    div{
+      margin-left: 10px;
+    }
+  }
+  .body{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .comment{
+    width: 80%;
+    margin: 0 auto 40px auto;
+  }
+  .comment__header{
+    border-bottom: 2px solid #9b59b6;
+    margin-bottom: 20px;
+  }
+  .comment__body{
+    color: darkgray;
+  }
+  .comment__footer{
+    border-top: 2px solid #9b59b6;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.comment-section{
+  position: relative;
+  max-width: 700px;
+  border-radius: 8px;
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  .header{
+    margin: 0 auto 20px auto;
+  }
+  .body{
+    textarea{
+      height: 300px;
+      resize: none;
+    }
+  }
+  .footer{
+    margin: 20px auto 0 auto;
+    border-top: 2px solid #9b59b6;
+    width: 90%;
+    .btn{
+      position: relative;
+      outline: none;
+      background: none;
+      border: none;
+      font-size: 16px;
+      margin-left: 10px;
+      width: 34.2px;
+      cursor: pointer;
+      div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background: #9b59b6;
+      }
+      &:hover{
+        div{
+          width: 100%;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}

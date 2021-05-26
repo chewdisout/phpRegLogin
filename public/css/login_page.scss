@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Secular+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+  display: grid;
+  grid-gap: 1px;
+  grid-template-areas: 'header header' 'form description';
+  width: 60%;
+  border-radius: 10px;
+  font-family: 'Secular One', sans-serif;
+  box-shadow: 0 0 50px -5px #000000;
+  .header{
+    grid-area: header;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    border: 1px solid black;
+    background: white;
+  }
+  .login-form{
+    grid-area: form;
+    padding: 15px;
+    background: white;
+    border: 1px solid black;
+    .input-field{
+      display: flex;
+      flex-direction: column;
+      .error{
+        color: red;
+        font-size: 12px;
+      }
+      input{
+        height: 30px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all .3s ease;
+        &:focus, &:valid{
+          border-color: #9b59b6;
+        }
+      }
+    }
+    .btn{
+      display: flex;
+      justify-content: space-between;
+      button, a{
+        background: transparent;
+        text-decoration: none;
+        color: black;
+        outline: none;
+        border: none;
+        font-family: 'Secular One', sans-serif;
+        font-size: 19px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        &:hover{
+          border-bottom-color: #9b59b6;
+        }
+      }
+    }
+  }
+  .login-description{
+    background: white;
+    grid-area: description;
+    padding: 15px;
+    border: 1px solid black;
+    span{
+      font-size: 25px;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 60px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .container{
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .container{
+    grid-template-areas: 'header' 'form' 'description';
+    .login-description{
+      div{
+        margin-top: 25px;
+      }
+    }
+  }
+}
